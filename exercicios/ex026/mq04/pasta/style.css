@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/* Configurações gerais */
+
+@media print {
+
+    main{
+        border: 2px solid black;
+    }
+    
+    main h1{
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        width: 90%;
+        content: 'Essa impressão vem do site feito por Mario Lisboa';
+        text-decoration: underline;
+    }
+
+    #cell {
+        display: none;
+      }
+      #impressora {
+        display: block;
+      }
+      #pc {
+        display: none;
+      }
+      #tablet {
+        display: none;
+      }
+      #tv {
+        display: none;
+      }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  body {
+    background-image: url(../img/back-phone.jpg);
+  }
+
+  #cell {
+    display: block;
+  }
+  #impressora {
+    display: none;
+  }
+  #pc {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #tv {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1024px) {
+  body {
+    background-image: url(../img/back-tablet.jpg);
+  }
+
+  #cell {
+    display: none;
+  }
+  #impressora {
+    display: none;
+  }
+  #pc {
+    display: none;
+  }
+  #tablet {
+    display: block;
+  }
+  #tv {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  body {
+    background-image: url(../img/back-pc.jpg);
+  }
+
+  #cell {
+    display: none;
+  }
+  #impressora {
+    display: none;
+  }
+  #pc {
+    display: block;
+  }
+  #tablet {
+    display: none;
+  }
+  #tv {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url(../img/back-tv.jpg);
+  }
+
+  #cell {
+    display: none;
+  }
+  #impressora {
+    display: none;
+  }
+  #pc {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #tv {
+    display: block;
+  }
+}
