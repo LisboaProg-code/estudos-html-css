@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto-Login | Lisboaprog</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style02.css" />
+  </head>
+  <body>
+    <main>
+      <section class="login">
+        <div class="img"></div>
+
+        <div class="form">
+          <h1>Login</h1>
+
+          <form action="cadastro.php" method="post" autocomplete="on">
+            <p class="email">
+              <label for="iemail"><span class="material-symbols-outlined">
+                person
+                </span></label> 
+              <input class="color" type="email" name="email" id="iemail" required size="40" autocomplete="email" placeholder="@email_user">
+            </p>
+
+            <p class="senha">
+                <label for="isenha"><span class="material-symbols-outlined">
+                    vpn_key
+                    </span></label>
+                <input class="color" type="password" name="senha" id="isenha" required size="40" autocomplete="current-password" minlength="8" placeholder="Senha">
+            </p>
+
+            <p>
+              <input class="entrar" type="submit" value="Entrar">
+            </p>
+
+            <p>
+              <input class="esqueci" type="button" value="Esqueci a senha"> <span id="mail" class="material-symbols-outlined">
+                mail
+                </span>
+            </p>
+            
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
