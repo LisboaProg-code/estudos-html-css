@@ -9,24 +9,38 @@
         .conteiner{
             background-color: lightsalmon;
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
         }
 
         .item{
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            flex-basis: 170px;
+            flex-basis: 200px;
+        }
+
+        #cxa{
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        #cxb{
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+
+        #cxc{
             flex-grow: 1;
+            flex-shrink: 10;
         }
 
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
+        <div id="cxa" class="item">A</div>
+        <div id="cxb" class="item">B</div>
+        <div id="cxc" class="item">C</div>
     </div>
 </body>
 </html>
